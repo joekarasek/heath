@@ -10,14 +10,12 @@
     padding-top: $spacing-xl;
 
     &--lead {
-      font-family: $ff-great-vibes;
       font-weight: 400;
       color: #ffffff;
       margin-bottom: 0;
       line-height: 1;
     }
     &--main {
-      font-family: $ff-mont;
       text-transform: uppercase;
       font-weight: 700;
       color: $c-grey-red;
@@ -29,7 +27,6 @@
     }
     h3 {
       color: $c-white;
-      font-family: $ff-open;
       margin-bottom: 0;
       line-height: $lh-sm;
       font-weight: 400;
@@ -65,7 +62,6 @@
         padding: $spacing-sm;
         padding-top: $spacing-md;
         line-height: $lh-xs;
-        font-family: $ff-mont;
         font-weight: 700;
         font-size: 84px !important;
         &:before {
@@ -79,7 +75,6 @@
         }
       }
       h3 {
-        font-family: $ff-mont;
         color: $c-white;
         margin-bottom: 0;
         line-height: $lh-xs;
@@ -107,7 +102,6 @@
         font-weight: 400;
       }
       .copy {
-        font-family: $ff-open;
         padding-left: $spacing-sm;
         padding-right: $spacing-sm;
         color: $c-grey-red-4;

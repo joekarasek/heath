@@ -64,7 +64,6 @@
 
   position: absolute;
   width: 100%;
-  font-family: $ff-mont;
   font-weight: 700;
 
   background-color: rgba($c-white, 0);
@@ -156,7 +155,6 @@
 }
 
 #primary-menu ul li > a {
-  font-family: $ff-mont;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
