@@ -46,7 +46,7 @@
 
   new Swiper('.swiper-container', {
     speed: 400,
-    autoplay: 6000,
+    autoplay: false,
     loop: true,
     autoplayDisableOnInteraction: false
   });
@@ -162,7 +162,6 @@
     console.log(tourIndex);
     $tourModalCarousel.trigger('to.owl.carousel', [ tourIndex , 0] );
   });
-
 
   // fix rendering ghost in tour modal
   $('#tourModal').on('shown.bs.modal', function() {
