@@ -88,10 +88,10 @@
     autoplayHoverPause:false,
     nav: true,
     dots: false,
-    margin: 60,
+    // margin: 60,
     navText: [
-      '<i class="icon-caret-left"></i>',
-      '<i class="icon-caret-right"></i>'
+      '<img src="assets/arrow%20left.svg" alt="Nav Arrow"></img>',
+      '<img src="assets/arrow%20right.svg" alt="Nav Arrow"></img>'
     ]
   });
 

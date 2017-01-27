@@ -21,5 +21,21 @@
     img {
       border-radius: 10px;
     }
+    &-wrapper {
+      padding: 0px 35px;
+    }
+    h4 {
+      color: #7a3b69;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #535353;
+      font-size: 18px;
+    }
+  }
+
+  .team-carousel-wrapper {
+    margin-bottom: 30px;
   }
 }
