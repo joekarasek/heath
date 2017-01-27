@@ -2,22 +2,30 @@
 
   //fix to make it transparent
 
+  &.phone-slab-marquee-one {
+    .container {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      top: -120px;
+    }
+  }
+
   &:not(.phone-slab-2) {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
     bottom: 0;
     position: absolute;
     width: 100%;
+    height: 80px;
   }
 
-  .text {
-    color: $c-red-grey;
-  }
 
   .phone-number {
-    color: $c-red-grey;
+    font-family: $ff-lato;
+    color: #424242;
     font-weight: 900;
     a:hover {
-      color: $c-red-grey !important;
+      color: #424242 !important;
       text-decoration: none;
     }
     &:hover {
@@ -31,24 +39,46 @@
     }
   }
 
-  .container {
-    padding-top: 20px;
-    padding-bottom: $spacing-md;
+  //Special styling for desktop cards for phone slug - Heath
+  .phone-card {
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    height: 100%;
+
+    &-one {
+      background-color: #8FC449;
+      padding: 15px 60px;
+      img {
+        max-width: 85px;
+        margin-bottom: 10px;
+      }
+    }
+    &-two {
+      background-color: #28a1c2;
+      padding: 15px 60px;
+      img {
+        max-width: 85px;
+        margin-bottom: 30px;
+      }
+    }
   }
+
+  .new-text {
+
+  }
+
+
 
   .row {
     @media screen and (min-width: $width-md+1) {
     display: flex;
     }
     .btn {
-      @media screen and (min-width: $width-md+1) {
-        @include vertical-center();
-      }
       padding-top: 10px;
       padding-bottom: 10px;
     }
   }
-
 
   h3,
   h5,
@@ -65,16 +95,12 @@
     padding-bottom: $spacing-sm;
   }
   &__left {
-    border-right: solid 2px #6c4117;
+    //border-right: solid 2px #6c4117;
     text-align: right;
-    margin-top: 5px;
     @media screen and (max-width: $width-md) {
+      margin-top: 5px;
       text-align: center;
       border-right: none;
-    }
-    @media screen and (max-width: $width-sm) {
-    }
-    @media screen and (max-width: $width-xs) {
     }
   }
   &__right {
@@ -83,10 +109,9 @@
       text-align: center;
       margin-bottom: $spacing-sm;
     }
-    @media screen and (max-width: $width-sm) {
-    }
-    @media screen and (max-width: $width-xs) {
-    }
+  }
+  h6 {
+    font-size: 16px;
   }
 
 
