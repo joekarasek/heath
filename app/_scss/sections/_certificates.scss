@@ -27,27 +27,23 @@
     position: relative;
   }
 
-  .col-left {
-    a {
-      position: absolute;
-      right: 0;
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media screen and (max-width: $width-xs) {
+      flex-direction: column;
     }
   }
-
+  h6 {
+    color: #585756;
+    margin-bottom: 0;
+  }
   img {
-    max-width: 180px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  @media screen and (max-width: $width-sm) {
-    .col-left {
-      a {
-        position: relative;
-      }
-    }
-    .col-left, .col-right {
-      text-align: center;
-    }
+    max-width: 250px;
   }
 }
