@@ -79,6 +79,22 @@
     }
   });
 
+  $('.js-team-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 400,
+    autoplayTimeout: 6000,
+    autoplayHoverPause:false,
+    nav: true,
+    dots: false,
+    margin: 60,
+    navText: [
+      '<i class="icon-caret-left"></i>',
+      '<i class="icon-caret-right"></i>'
+    ]
+  });
+
   $('.js-certificate-carousel').owlCarousel({
     items: 1,
     loop: true,

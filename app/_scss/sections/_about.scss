@@ -11,48 +11,15 @@
   .heading {
     text-align: center;
 
-    &--main {
-      color: $c-black-green;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: $spacing-xs;
-      span {
-        @include h3;
-        font-weight: 700;
-      }
-    }
-
-    &--byline {
-      color: $c-teal;
-      font-weight: 400;
-      margin-top: 0;
-      margin-bottom: 0;
-      line-height: 0.5;
-    }
-
-    &--break {
-      display: inline-block;
-      width: 200px;
-      border-bottom: 2px solid $c-breakline-grey;
-      margin-bottom: $spacing-md;
-    }
   }
 
-  .bio-image {
-    text-align: center;
-    @media screen and (max-width: $width-md) {
-      margin-bottom: $spacing-md;
-    }
-  }
-
-  .row {
-    @media screen and (min-width: $width-md+1) {
-      display: flex;
-    }
-    &>div:last-child {
-      background-color: #fff;
-      padding: $spacing-md;
-      color: $c-grey;
+  //Team Carousel
+  .team-card {
+    border: solid 1px #5F5B4A;
+    border-radius: 10px;
+    padding: 60px 45px;
+    img {
+      border-radius: 10px;
     }
   }
 }
