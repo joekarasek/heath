@@ -63,7 +63,32 @@
 }
 
 .services-carousel {
+  &--wrapper {
+    background-color: #ACBFB2;
+  }
 
+  //custom background
+  .carousel--wrapper {
+    margin-top: -30px;
+  }
+  .service-item {
+    text-align: center;
+    h5 {
+      color: #7a3b69;
+      padding-top: 10px;
+    }
+    img {
+      border: solid 2px white;
+      border-radius: 10px;
+    }
+  }
+
+}
+.white-div {
+  width: 100%;
+  height:80px;
+  background-color: white;
+  margin-top: -80px;
 }
 
 .service-modal-wrapper {
