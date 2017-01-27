@@ -62,9 +62,10 @@
 
 #header {
 
-  @media screen and (min-width: $width-md - 1) { position: absolute; }
+  //@media screen and (min-width: $width-md - 1) { position: absolute; }
   width: 100%;
   font-weight: 700;
+  border-bottom: 0px solid white;
 
   background-color: rgba($c-white, 0);
 
@@ -73,7 +74,7 @@
     pointer-events: auto;
   }
   #header-wrap {
-    border-bottom: 0;
+    border-bottom: 0px solid white;
   }
   #logo {
     padding-top: 20px;
