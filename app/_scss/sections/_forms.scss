@@ -1,0 +1,25 @@
+#section-forms {
+  .container {
+    border: 1px solid #5F5B4A;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 45px;
+    text-align: center;
+  }
+
+  h2 {
+    color: #5f5b4a;
+    margin-bottom: 15px;
+  }
+  h5 {
+    color: #585756;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .btn__form {
+    background-color: #7A3B69;
+    @include lr-padding(60px, 45px, 45px, 30px)
+  }
+}
