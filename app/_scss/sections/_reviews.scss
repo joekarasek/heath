@@ -1,26 +1,29 @@
 #section-reviews {
-  background-image: url('/assets/reviews-bg.jpg');
-  background-attachment: fixed;
-  @include parallax-background;
+
+  .review-wrapper {
+    background-image: url('/assets/reviews_bkgd.jpg');
+    background-position: center top;
+    background-size: cover;
+    padding-top: 600px;
+    @media screen and (max-width: $width-sm) {
+      background-image: none;
+      background-color: #624A5A;
+      padding-top: 0;
+    }
+  }
 
   .heading {
     padding-top: 60px;
     padding-bottom: 30px;
-  }
-  h3 {
-    color: $c-teal;
-    font-weight: 400;
-    margin-bottom: 0;
-    line-height: 1.5;
-    @media screen and (max-width: $width-md) {
-      color: white;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    }
+    background-color: #624a5a;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
   }
 
   h2 {
     font-weight: 700;
-    color: $c-grey-red;
+    color: #ffffff;
     margin-bottom: 0;
     line-height: 1;
   }
@@ -34,9 +37,7 @@
 
   /// Mobile fix for standard birdeye review restack
   @media screen and (max-width: $width-sm) {
-    background-color: #b1c1d0;
-    background-image: none;
-
+    background-color: #624a5a;
     .mobile-image {
       margin-top: -50px;
     }
