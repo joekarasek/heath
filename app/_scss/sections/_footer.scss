@@ -1,7 +1,7 @@
 //Overrides for Canvas
 #footer {
   position: relative;
-  background-color: #575757;
+  background-color: #446973;
   border-top: none;
   a {
     @include link-color($c-white);
@@ -34,6 +34,11 @@
   .flex--wrapper {
     display: flex;
     justify-content: space-between;
+
+    //fix for desktop
+    .flex--spacer__desktop {
+      width: 60px;
+    }
     @media screen and (max-width: $width-md) {
       flex-direction: column-reverse;
       .social-media-links {
