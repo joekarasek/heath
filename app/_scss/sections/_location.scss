@@ -1,25 +1,28 @@
 #section-location {
-  position: relative;
-  
+  background-image: url('/assets/bottom-bg.jpg');
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  //position: relative;
+  //
   .location-card--wrapper {
-    background: rgba($c-white, 0.85);
-    position: absolute;
-    z-index: 10;
     height: 100%;
-    width: 40%;
-    
-    @media screen and (max-width: $width-md) {
-      position: relative;
-      width: 100%;
+  }
+
+  @media screen and (min-width: $width-md ) {
+    .row {
+      display: flex;
     }
   }
-  
+
 }
 
 .location-card {
-  margin: 30px 0;
   border-radius: 0.1px;
+  border: solid 2px white;
   z-index: 0;
+  height: 100%;
+  position: relative;
   @media (max-width: $width-md) {
     margin-bottom: 5px;
     margin-top: 0px;
@@ -28,21 +31,22 @@
   img {
     width: 60%;
     max-width: 300px;
-    padding-top: $spacing-sm;
+    padding-top: $spacing-lg;
     padding-bottom: $spacing-sm;
   }
   p {
-    color: $c-grey-red;
+    color: #ffffff;
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 0;
     line-height: 0.8;
   }
   h6 {
-    color: #3B5170;
+    color: #ffffff;
     font-weight: 400;
+    font-family: $ff-open;
     font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     line-height: $lh-sm;
   }
   a>h6 {
@@ -50,15 +54,16 @@
     padding-bottom: $spacing-md;
     font-weight: 400;
     font-size: 16px;
-    color: #fa9322;
+    color: #FDF378;
   }
   .phone-number {
     line-height: $lh-sm;
-    color: $c-grey-red;
+    font-family: $ff-lato;
+    color: #ffffff;
     font-weight: 900;
     margin-bottom: 0;
     a:hover {
-      color: #3B5170 !important;
+      color: #ffffff !important;
       text-decoration: none;
     }
     &:hover {
@@ -66,11 +71,12 @@
     }
   }
   .phone-number-2 {
-    color: #575757;
+    color: #ffffff;
   }
   .btn {
-    margin-top: $spacing-md;
-    margin-bottom: $spacing-sm;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 50%);
   }
   h6:last-child {
     padding-bottom: $spacing-lg;
@@ -81,14 +87,16 @@
   height: 700px;
   @media (max-width: $width-md) {
     height: 300px;
+    margin-top: 45px;
   }
 }
 
 .hours-table {
-  //color: $c-grey-location;
+  color: #ffffff;
   padding-bottom: $spacing-md;
+  padding-top: 30px;
   h5 {
-    color: $c-grey-red;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 0;
@@ -110,7 +118,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 
