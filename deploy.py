@@ -23,7 +23,7 @@ if webfaction.checkSite():
 	prompt = raw_input("Would you like to pull the latest version of master from GitHub to the server and build your site? [Y/n]")
 	if prompt == "y" or prompt == "Y":
 		print "Pulling latest version..."
-		webfaction.gitPull()
+		#webfaction.gitPull()
 		print "Pull successful"
 		print "Building Site..."
 		#webfaction.npmInstall()
@@ -42,7 +42,7 @@ if webfaction.checkApp():
 else:
 	print "Starting webApp configuration..."
 	webfaction.createApp()
-	webfaction.gitClone()
+	#webfaction.gitClone()
 	# webfaction.addHtaccess()
 	print "Finished webApp configuration"
 
