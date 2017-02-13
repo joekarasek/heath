@@ -5,6 +5,18 @@
     background-position: center top;
     background-size: cover;
     padding-top: 600px;
+    @media screen and (max-width: $width-lg) {
+      padding-top: 380px;
+      #bf-revz-widget-2803954473 iframe {
+        height: 450px;
+      }
+    }
+    @media screen and (max-width: $width-md) {
+      padding-top: 340px;
+      #bf-revz-widget-2803954473 iframe {
+        height: 300px;
+      }
+    }
     @media screen and (max-width: $width-sm) {
       background-image: none;
       background-color: #624A5A;

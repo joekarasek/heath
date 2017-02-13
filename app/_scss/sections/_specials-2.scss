@@ -5,23 +5,23 @@
 
 
   .heading {
-
-    background-color: rgba(white, 0.55);
-
     padding-bottom: $spacing-md;
-    padding-top: $spacing-md;
-    margin-top: 90px;
+    padding-top: 30px;
     margin-bottom: 60px;
 
     &--main {
       font-weight: 700;
-      color: #5f5b4a;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.41);
+
       margin-bottom: 0;
       line-height: 1;
     }
     &--byline {
       font-weight: 700;
-      color: #5f5b4a;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.41);
+
       margin-bottom: 0;
     }
 
