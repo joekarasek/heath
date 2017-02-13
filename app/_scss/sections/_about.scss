@@ -1,6 +1,9 @@
 #section-about {
   position: relative;
-  padding-top: 60px;
+  padding-top: 200px;
+  @media screen and (max-width: $width-md) {
+    padding-top: 30px;
+  }
   padding-bottom: 100px;
 
   //background-image: url('/assets/bio-bg.jpg');

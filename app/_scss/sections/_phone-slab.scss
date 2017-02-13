@@ -2,21 +2,24 @@
 
   //fix to make it transparent
 
-  &.phone-slab-marquee-one {
-    .container {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      top: -120px;
-    }
-  }
-
   &:not(.phone-slab-2) {
     background-color: rgba(255, 255, 255, 1);
     bottom: 0;
     position: absolute;
     width: 100%;
     height: 100px;
+  }
+
+  &.phone-slab-marquee-one {
+    position: relative;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 10;
+    top: -100px;
+    height: 0;
+    @media screen and (max-width: $width-lg) {
+      top: -60px;
+    }
   }
 
   &.phone-slab-2 {
@@ -78,7 +81,7 @@
 
 
   .row {
-    @media screen and (min-width: $width-md+1) {
+    @media screen and (min-width: $width-md) {
     display: flex;
     }
     .btn {
@@ -94,7 +97,7 @@
     margin-bottom: 0;
   }
   h3 {
-    @media screen and (max-width: $width-md) {
+    @media screen and (max-width: $width-md - 1) {
       margin-bottom: $spacing-md;
     }
   }
@@ -104,7 +107,7 @@
   &__left {
     //border-right: solid 2px #6c4117;
     text-align: right;
-    @media screen and (max-width: $width-md) {
+    @media screen and (max-width: $width-md - 1) {
       margin-top: 5px;
       text-align: center;
       border-right: none;
@@ -112,7 +115,7 @@
   }
   &__right {
     text-align: left;
-    @media screen and (max-width: $width-md) {
+    @media screen and (max-width: $width-md - 1) {
       text-align: center;
       margin-bottom: $spacing-sm;
     }

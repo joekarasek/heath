@@ -42,7 +42,8 @@
     padding-top: 39px;
   }
   #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
-    transform: translateY(15%);
+    height: 80px;
+    margin-top: 10px;
   }
 }
 
@@ -59,15 +60,17 @@
   }
 }
 
-
+#wrapper { @include static-nav-menu(); }
+@include sticky-nav();
 #header {
+
 
   //@media screen and (min-width: $width-md - 1) { position: absolute; }
   width: 100%;
   font-weight: 700;
   border-bottom: 0px solid white;
 
-  background-color: rgba($c-white, 0);
+  background-color: rgba($c-white, 1);
 
   #primary-menu-trigger {
     font-size: 30px;
@@ -77,7 +80,6 @@
     border-bottom: 0px solid white;
   }
   #logo {
-    padding-top: 20px;
     padding-left: 20px;
   }
 
@@ -110,11 +112,14 @@
 
  @media screen and (min-width: $width-md - 1) {
    &, #header-wrap, #logo img {
-     height: 120px;
-
-   }
-   &.sticky-header:not(.static-sticky), &.sticky-header:not(.static-sticky) &-wrap, &.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
      height: 100px;
+     background-color: white;
+   }
+   #logo img {
+     margin-top: 10px;
+   }
+   &.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+     height: 80px;
    }
    &.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
      padding-top: 40px;
