@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "autoprefixer": "^6.3.3",
+    "cssnano": "^3.5.2",
+    "postcss": "^5.0.16",
+    "postcss-cli": "^2.5.1",
     "browser-sync": "^2.18.1",
     "node-sass": "^3.13.0",
     "nodemon": "^1.11.0",
@@ -22,6 +26,7 @@
     "build:html": "cp app/index.html build/index.html",
     "build:js": "cp -r app/js build/js",
     "build:css": "node-sass --output-style=expanded --source-map-embed app/_scss/main.scss build/css/main.css",
+    "build:postcss": "postcss --use autoprefixer -b 'last 2 versions' < build/css/main.css | postcss --use cssnano > build/css/main.min.css",
     "build": "npm run clean && if [ ! -d build ]; then mkdir build; fi && npm run build:css && (npm run build:js & npm run build:html & npm run build:loaders & npm run build:assets)",
     "compile": "if [ ! -d build ]; then mkdir build; fi && npm run compile:css & npm run compile:sassdoc",
     "watch": "npm run watch:css & npm run watch:sassdoc",
