@@ -110,6 +110,9 @@
     &:hover {
       text-decoration: none;
     }
+    @media  screen and (max-width: $width-md) {
+      margin-right: 0;
+    }
   }
   .icon-#{$name} {
     color: white;
