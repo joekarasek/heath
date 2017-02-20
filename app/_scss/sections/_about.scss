@@ -40,4 +40,35 @@
   .team-carousel-wrapper {
     padding-bottom: 30px;
   }
+  .team-carousel {
+    &--wrapper {
+      //background-color: #ACBFB2;
+      padding-bottom: 45px;
+    }
+
+    .team-mobile {
+      text-align: center;
+      h5 {
+        color: #7a3b69;
+        padding-top: 10px;
+      }
+      img {
+        border: solid 2px white;
+        border-radius: 10px;
+      }
+    }
+
+    .owl-carousel .owl-nav .owl-prev {
+      left: -30px;
+    }
+    .owl-carousel:hover .owl-nav .owl-prev {
+      left: -30px;
+    }
+    .owl-carousel .owl-nav .owl-next {
+      right: -30px;
+    }
+    .owl-carousel:hover .owl-nav .owl-next {
+      right: -30px;
+    }
+  }
 }

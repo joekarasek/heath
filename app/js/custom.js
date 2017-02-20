@@ -79,6 +79,33 @@
     }
   });
 
+  $('.js-team-carousel--mobile').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 400,
+    autoplayTimeout: 6000,
+    autoplayHoverPause:false,
+    nav: true,
+    dots: false,
+    margin: 60,
+    navText: [
+      '<img src="assets/arrow%20left.svg" alt="Nav Arrow"></img>',
+      '<img src="assets/arrow%20right.svg" alt="Nav Arrow"></img>'
+    ],
+    responsive: {
+      480: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
+
   $('.js-team-carousel').owlCarousel({
     items: 1,
     loop: true,
